@@ -21,7 +21,7 @@ image_url: '7apps.jpg',
 price: 26.00)
 # . . .
 # . . .
-Product.create(title: 'Seven Mobile Apps in Seven Weeks',
+Product.create(title: 'Rails Book',
     description:
     %{<p>
     <em>Native Apps, Multiple Platforms</em>
@@ -32,5 +32,5 @@ Product.create(title: 'Seven Mobile Apps in Seven Weeks',
     out which cross-platform solution makes the most sense for your needs.
     </p>},
     image_url: '1.png',
-    price: 26.00)
+    price: 28.00)
     # . . .
