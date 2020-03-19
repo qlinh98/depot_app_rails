@@ -7,7 +7,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       title: "Banh trang tay ninh",
       description: "ngon beo!",
       image_url: "1.png",
-      price: 1
+      price: 1,
     }
   end
 
@@ -42,6 +42,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "should update product" do
     patch product_url(@product), params: { product: @update } # product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
     assert_redirected_to product_url(@product)
+  end
+
+  test "can't delete product in cart" do
+    assert_difference("Product.count", 0) do
+      delete product_url(products(:two))
+    end
+
+    assert_redirected_to products_url
   end
 
   test "should destroy product" do
