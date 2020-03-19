@@ -31,6 +31,6 @@ Product.create(title: 'Rails Book',
     experienced developer needing to expand your options. Plus, you’ll find
     out which cross-platform solution makes the most sense for your needs.
     </p>},
-    image_url: '1.png',
+    image_url: 'rails.png',
     price: 28.00)
     # . . .

@@ -6,7 +6,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     @update = {
       title: "Banh trang tay ninh",
       description: "ngon beo!",
-      image_url: "1.jpg",
+      image_url: "1.png",
       price: 1
     }
   end
@@ -40,7 +40,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update product" do
-    patch product_url(@product), params: { @update } # product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
+    patch product_url(@product), params: { product: @update } # product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
     assert_redirected_to product_url(@product)
   end
 
