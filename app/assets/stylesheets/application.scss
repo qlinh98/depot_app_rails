@@ -101,7 +101,7 @@ body > td {
 @media all and (max-width: 500px) {
   #banner {
     height: 1em;
-  } 
+  }
   #banner .title {
     display: none;
   }
@@ -140,4 +140,8 @@ body > td {
       display: none;
     }
   }
+}
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
 }
