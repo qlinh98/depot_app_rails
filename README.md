@@ -26,3 +26,6 @@
 * Deployment instructions
 rails s -b 0.0.0.0 (eg: http://192.168.0.118:3000)
 
+* Test application
+1. rails db:migrate RAILS_ENV=test
+2. rails test (if error supperuser or trigger, so ALTER USER myuser WITH SUPERUSER;)
